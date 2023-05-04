@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphical Representation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="topdiv">
+      <div class="inputmain">
+        <div><h3 style="font-size: 1.4rem">Enter Values</h3></div>
+        <div class="inputinner">
+          <!-- //onchange="inputValue1(this.value)   onchange="inputValue2(this.value)"-->
+          <div>
+            <input type="number" id="input1" placeholder="Input Value" />
+          </div>
+          <div><input type="number" id="input2" placeholder="Max Value" /></div>
+          <div>
+            <button type="submit" onclick="submitHandler()">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div><h2>Select Colors</h2></div>
+        <div>
+          <div class="colorlist" id="color1" onclick="firstColor()">
+            <div class="color1"></div>
+            <div>FFFFFF</div>
+            <div style="margin-left: 40px">100%</div>
+          </div>
+          <div class="colorlist" id="color2" onclick="secondColor()">
+            <div class="color2"></div>
+            <div>C2E3FF</div>
+            <div style="margin-left: 40px">100%</div>
+          </div>
+          <div class="colorlist" id="color3" onclick="thirdColor()">
+            <div class="color3"></div>
+            <div>008CFF</div>
+            <div style="margin-left: 40px">100%</div>
+          </div>
+          <div class="colorlist" id="color4" onclick="fourthColor()">
+            <div class="color4"></div>
+            <div>003F73</div>
+            <div style="margin-left: 40px">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div><h2>Graphs</h2></div>
+      <div class="graphcontainer">
+        <div>
+          <div>
+            <div class="leftcontainer" id="leftcontainer">
+              <div class="piechartleft" id="piechartleft"></div>
+            </div>
+          </div>
+          <div><h2 id="level1">50%</h2></div>
+          <div>Level 1</div>
+        </div>
+        <div class="flex">
+          <div class="piechartmiddle" id="piechartmiddle"></div>
+          <div style="margin: auto;"><h2 id="level2">50%</h2></div>
+          <div>Level 2</div>
+        </div>
+
+        <div>
+          <div>
+            <div class="rightcontainer" id="rightcontainer">
+              <div class="piechartright" id="piechartright"></div>
+            </div>
+          </div>
+          <div><h2 id="level3">50%</h2></div>
+          <div>Level 3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
